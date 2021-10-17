@@ -4,7 +4,7 @@ root=Tk()
 root.title("Di chuyen tam giac")
 cas = Canvas(root, width=500,height=700)
 cas.pack()
-cas.create_polygon(10,10,10,30,40,30)
+cas.create_oval(100,120,50, fill="blue",outline="#DDD", width=5)
 def dichuyen(event):
     if event.keysym == 'Up':
         cas.move(1,0,-30)
